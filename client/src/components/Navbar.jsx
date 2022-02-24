@@ -16,9 +16,10 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="w-64 cursor-pointer" />
       </div>
       <ul className="text-black md:flex hidden list-none flex-row justify-between items-center flex-initial">
-        <Link to="/" className='flex mx-12'>หน้าแรก</Link>
-        <Link to="/Transactions" className='flex mx-6'>ประวัติการทำธุรกรรม</Link>
-        <Link to="/News" className='flex mx-6'>ข่าวสารต่างประเทศ</Link>
+        <Link to="/" className='flex mx-8 hover:underline'>หน้าแรก</Link>
+        <Link to="/Cryptocurencies" className='flex mx-6 hover:underline'>ราคาเหรียญ</Link>
+        <Link to="/Transactions" className='flex mx-6 hover:underline'>ประวัติการทำธุรกรรม</Link>
+        <Link to="/News" className='flex mx-6 hover:underline'>ข่าวสารต่างประเทศ</Link>
         <li className="bg-[#2952e3] text-white py-2 px-7 mx-4 rounded-full text-center cursor-pointer hover:bg-[#2546bd]">
           Login
         </li>

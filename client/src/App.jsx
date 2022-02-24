@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Switch, Route, Link } from 'react-router-dom';
-import { Navbar, Transfer, Footer, Services, Transactions, News } from "./components";
+import { Navbar, Transfer, Footer, Services, Transactions, News, Cryptocurencies } from "./components";
 import logo from './logo.svg'
 import './App.css'
 
@@ -16,6 +16,9 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <Transfer />
+            </Route>
+            <Route exact path="/cryptocurencies">
+            <Cryptocurencies />
             </Route>
             <Route exact path="/transactions">
             <Transactions />
