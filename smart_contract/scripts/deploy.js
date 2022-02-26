@@ -1,13 +1,16 @@
+
+const { ethers } = require("hardhat");
+
 const main = async () => {
-    const Transactions = await hre.ethers.getContractFactory("Transactions");
+    const Transactions = await ethers.getContractFactory("Transactions");
     const transactions = await Transactions.deploy();
-
-    await transactions.deploy();
-
-    console.log("Transactions deployed to : ", transactions.address);
-}
-
-const runMain = async () => {
+  
+    await transactions.deployed();
+  
+    console.log("Transactions deployed to:", transactions.address);
+  }
+  
+  const runMain = async () => {
     try {
         await main();
         process.exit(0);
@@ -15,6 +18,6 @@ const runMain = async () => {
         console.error(error);
         process.exit(1);
     }
-}
-
-runMain();
+  }
+  
+  runMain();

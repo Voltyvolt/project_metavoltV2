@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/volt/Desktop/Project/project_metavoltV2/smart_contract/contracts/Transactions.sol": {
+      "lastModificationDate": 1645875313710,
+      "contentHash": "e8e4faccb83a02b213daed156bcf3a56",
+      "sourceName": "contracts/Transactions.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Transactions"
+      ]
+    }
+  }
+}
